@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Album List</title>
+  </head>
+  <body>
+    <h1>Albums</h1>
+    
+    <ul>
+    {% for album in albums %}
+      <li>
+        <a href="/albums/{{album.id}}">{{album.title}}</a>
+      </li>
+    {% endfor %} 
+    </ul> 
+  </body>
+</html>
